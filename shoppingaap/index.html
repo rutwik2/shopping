@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="./css/custom.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav container" id="cart-header">
+        <h1 class="logo" style="color: red; font-weight: bolder;">Shopify</h1>
+        <a href="#cart-header">Home</a>
+        <a href="#allproducts">Products</a>
+        <a href="#card-footer">About</a>
+        <h4><i class="bx bx-shopping-bag " id="cart-icon"> Cart</i></h4>
+        
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <hr style="color: black;"/>
+          <div class="cart-content">
+            
+          </div>
+          <div class="total">
+            
+          </div>
+          <button type="button" class="btn-buy" onclick="buyProduct()">Buy Now</button>
+          <i class="bx bx-x" id="close-cart"></i>
+        </div>
+      </div>
+    </header>
+
+    <div>
+      <br/>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide pt-5"
+        data-bs-ride="carousel"
+
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="./images/PC_3000._CB632136477_.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./images/DesktopTallhero_3000x1200_2._CB623843558_.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/MA_3000._CB632287453_.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="body1" id="allproducts">
+      <h2>Latest Product</h2>
+      <hr>
+      <div class="maindiv">
+        <div class="latestproduct">
+          <a href="#">
+            <img src="./images/-original-imagezy4ymckfbf4.webp" alt="image1" class="product-img" />
+            <p class="product-title">RED CHIEF Men Black Casual Sandal</p>
+            <p class="price">₹998 </p>
+            <i class="bx bx-shopping-bag add-cart icon"></i>
+          </a>
+        </div>
+        <div class="latestproduct">
+          <a href="#">
+            <img src="./images/-original-imagfywbnpmgwdcg.webp" alt="image2"  class="product-img" />
+            <p class="product-title">U.S. POLO ASSN. Sneakers For Men</p>
+            <p class="price">₹1,349</p>
+            <i class="bx bx-shopping-bag add-cart icon"></i>
+          </a>
+        </div>
+        <div class="latestproduct">
+          <a href="#">
+            <img
+              src="./images/3240sl03-fastrack-original-imafuj94kus4f9cd.webp"
+              alt="img3"
+              class="product-img"
+            />
+            <p class="product-title">Daniel Jubile Arrow Blk Arrow Boys</p>
+            <p class="price">₹239</p>
+            <i class="bx bx-shopping-bag add-cart icon"></i>
+          </a>
+        </div>
+        <div class="latestproduct">
+          <a href="#">
+            <img
+              src="./images/8-381391-8-puma-black-peachskin-original-imagc8aetghnz32g.webp"
+              alt="img4"
+              class="product-img"
+            />
+            <p class="product-title">Lee Won Men's Stylish Loafers</p>
+            <p class="price">₹199</p>
+            <i class="bx bx-shopping-bag add-cart icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="body1">
+      <h2>Best of Electronics</h2>
+      <hr>
+      <div class="maindiv">
+        <div class="latestproduct">
+          <a href="#">
+            <img src="./images/trimmer.webp" alt="keyboard"  class="product-img"/>
+            <p class="product-title">Cosmic Byte CB-GK-22 Veritas TKL RGB Sonic Spectrum Wir..</p>
+            <p class="price">₹899 </p>
+            <i class="bx bx-shopping-bag add-cart icon"></i>
+          </a>
+        </div>
+        <div class="latestproduct">
+          <a href="#">
+            <img src="./images/4kmonitor.webp" alt="4k monitor"  class="product-img" />
+            <p class="product-title">BenQ PD 27 inch 4K Ultra HD LED Backlit IPS Panel Heigh...</p>
+            <p class="price">₹38,000</p>
+            <i class="bx bx-shopping-bag add-cart icon"></i>
+          </a>
+        </div>
+        <div class="latestproduct">
+          <a href="#">
+            <img src="./images/monitor.webp" alt="monitor"  class="product-img" />
+            <p class="product-title">DELL 19.5 inch HD Monitor (D2020H)</p>
+            <p class="price">₹8,199</p>
+            <i class="bx bx-shopping-bag add-cart icon"></i>
+          </a>
+        </div>
+        <div class="latestproduct">
+          <a href="#">
+            <img src="./images/printer.webp" alt="printers"  class="product-img"/>
+            <p class="product-title">HP DeskJet 2331 Multi-function Color Printer</p>
+            <p class="price">₹3,999</p>
+            <i class="bx bx-shopping-bag add-cart icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="card-footer">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    
+
+  </body>
+</html>

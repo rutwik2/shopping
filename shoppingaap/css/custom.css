@@ -1,0 +1,178 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(54, 51, 51);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    color: white;
+    
+    z-index: 2;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.nav a:hover{
+    color: yellow;
+}
+.nav h4{
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: white;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+}
+.cart.active{
+    right: 0;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    color: black;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: black;
+}
+.carousel-item{
+    height: 300px;
+    margin-top: 30px;
+}
+.cart-price{
+    color: red;
+    font-weight: 700;
+}
+.cart-quantity{
+    border: 1px solid black;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    border-top: 1px solid black;
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+.total-price{
+    margin-left: 00.5rem;
+    font-size: 1rem;
+    color: black;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: red;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+}
+.body1{
+    padding: 10px;
+}
+.body1 h2{
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-family: 'Arvo', Courier, serif;
+}
+.maindiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+   
+
+
+}
+.maindiv div{
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px lightblue;
+}
+.latestproduct img ,p{
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+.latestproduct a{
+    text-decoration: none;
+    color: black;
+}
+.latestproduct a:hover{
+    color: red;
+}
+.latestproduct:hover{
+    padding: 10px;
+    border: 2px solid red;
+}
+.card{
+    text-align: center;
+    padding-top: 20px;
+}
+.icon{
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+}
